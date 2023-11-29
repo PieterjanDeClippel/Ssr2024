@@ -13,6 +13,7 @@ public class SpaPrerenderingService : ISpaPrerenderingService
 
     public Task BuildRoutes(ISpaRouteBuilder routeBuilder)
     {
+        routeBuilder.Route("", "home");
         return Task.CompletedTask;
     }
 
@@ -21,7 +22,13 @@ public class SpaPrerenderingService : ISpaPrerenderingService
         var route = await spaRouteService.GetCurrentRoute(context);
         switch (route?.Name)
         {
-            default:
+            case "home":
+                // Below object can come from a database
+                data["someObject"] = new
+                {
+                    FirstName = "John",
+                    LastName = "Doe"
+                };
                 break;
         }
     }

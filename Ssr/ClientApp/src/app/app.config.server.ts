@@ -1,5 +1,5 @@
 import { mergeApplicationConfig, ApplicationConfig, importProvidersFrom } from '@angular/core';
-import { provideServerRendering } from '@angular/platform-server';
+import { ServerTransferStateModule, provideServerRendering } from '@angular/platform-server';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { of } from 'rxjs';
 import { appConfig } from './app.config';
