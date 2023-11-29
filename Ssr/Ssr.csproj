@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
@@ -17,6 +17,7 @@
 	<ItemGroup>
 		<PackageReference Include="MintPlayer.AspNetCore.Hsts" Version="8.0.0" />
 		<PackageReference Include="MintPlayer.AspNetCore.SpaServices.Routing" Version="8.2.0" />
+		<PackageReference Include="WebMarkupMin.AspNetCore8" Version="2.15.2" />
 	</ItemGroup>
 
 	<ItemGroup>
